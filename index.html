@@ -19,18 +19,30 @@
             <!--Autentificación con facebook-->    
                 <input id="facebookButton" onclick="facebookLoginWithFirebase()" type="button" value="FACEBOOK LOGIN">
             </div>
+            <!--Contenedor de gif-->                                    
+            <div id="gifContainer">
+            </div>
+            <!--Opción para enviar gif-->            
+            <div>
+                <input id="gifArea" type="text"> <input id="sendGif" onclick="sendGif()" type="button" value="SEND GIF">
+            </div>
+            <!--Opción para enviar imagen-->   
+            <div id="photoFileSelector" type="file"> 
+                <input id="sendPhoto" type="button" onclick="sendPhotoToStorage()" value="SEND PHOTO">
+            </div>
         </div>
         <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
         <script>
             // Initialize Firebase
             var config = {
-                apiKey: "AIzaSyDz28W-yh2DViQiA0xscpkgGVlfRlkYuQU",
-                authDomain: "gifchatlaboratoria.firebaseapp.com",
-                databaseURL: "https://gifchatlaboratoria.firebaseio.com",
-                projectId: "gifchatlaboratoria",
-                storageBucket: "gifchatlaboratoria.appspot.com",
-                messagingSenderId: "103111342125"
+                apiKey: "AIzaSyDR27B9rMGAtvE9Pz02ippvT8GpMzXWjUI",
+                authDomain: "taller-chile-firebase.firebaseapp.com",
+                databaseURL: "https://taller-chile-firebase.firebaseio.com",
+                projectId: "taller-chile-firebase",
+                storageBucket: "",
+                messagingSenderId: "701206181560"
             };
+
             firebase.initializeApp(config);
         </script>
         <script src="app.js"></script>
